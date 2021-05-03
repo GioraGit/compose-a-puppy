@@ -35,7 +35,7 @@ fun ACard(
 
 @Preview(name = "Light Theme", backgroundColor = 0xF2F2F7, showBackground = true)
 @Composable
-fun LightPreview() {
+fun ACardLightPreview() {
     MyTheme(darkTheme = false) {
         ACard(
             modifier = Modifier
@@ -57,7 +57,7 @@ fun LightPreview() {
 
 @Preview(name = "Dark Theme", backgroundColor = 0x121212, showBackground = true)
 @Composable
-fun DarkPreview() {
+fun ACardDarkPreview() {
     MyTheme(darkTheme = true) {
         ACard(
             modifier = Modifier

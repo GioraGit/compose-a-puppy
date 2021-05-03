@@ -23,7 +23,11 @@ import com.example.androiddevchallenge.composables.ACard
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 @Composable
-fun PuppyCard(name: String, gender: String, breed: String) {
+fun PuppyCard(
+    name: String,
+    gender: String,
+    breed: String
+) {
     ACard(
         modifier = Modifier
             .requiredWidth(150.dp)
@@ -71,18 +75,26 @@ fun PuppyCard(name: String, gender: String, breed: String) {
     }
 }
 
-@Preview(name = "Light Theme", widthDp = 120, heightDp = 200, backgroundColor = 0xF2F2F7, showBackground = true)
+@Preview(name = "Light Theme", widthDp = 170, heightDp = 230, backgroundColor = 0xF2F2F7, showBackground = true)
 @Composable
-fun LightPreview() {
+fun PupyCardLightPreview() {
     MyTheme(darkTheme = false) {
-        PuppyCard(name = "George the first from castle", gender = "Male", breed = "Bull Terrier")
+        PuppyCard(
+            name = "George the first from castle",
+            gender = "Male",
+            breed = "Bull Terrier"
+        )
     }
 }
 
-@Preview(name = "Dark Theme", widthDp = 120, heightDp = 200, backgroundColor = 0x121212, showBackground = true)
+@Preview(name = "Dark Theme", widthDp = 170, heightDp = 230, backgroundColor = 0x121212, showBackground = true)
 @Composable
-fun DarkPreview() {
+fun PupyCardDarkPreview() {
     MyTheme(darkTheme = true) {
-        PuppyCard(name = "George the first from castle", gender = "Male", breed = "Bull Terrier")
+        PuppyCard(
+            name = "George the first from castle",
+            gender = "Male",
+            breed = "Bull Terrier"
+        )
     }
 }
